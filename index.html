@@ -700,7 +700,11 @@
                     }, 500);
                 },
             });
-
+            setTimeout(function() {
+                const tunnel = document.getElementById('tunnel')
+                console.log(tunnel);
+                console.dir(tunnel);
+            },3000)
             function appendCylinder(arr) {
                 const scene = document.querySelector('a-scene');
                 arr.forEach((item, index) => {
